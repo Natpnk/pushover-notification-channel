@@ -1,0 +1,37 @@
+{
+    "name": "natpnk/pushover-notification-channel",
+    "homepage": "https://gitlab.com/natpnk/pushover-notification-laravel",
+    "description": "Pushover Laravel Notification Channel",
+    "license": "MIT",
+    "keywords": [
+        "Laravel",
+        "Pushover"
+    ],
+    "authors": [
+        {
+            "name": "Natpnk",
+            "email": "patrick@koretech.nl"
+        }
+    ],
+    "require": {
+        "laravel-notification-channels/pushover": "^4.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Natpnk\\Pushover\\PushoverServiceProvider"
+            ],
+            "dont-discover": [
+                "laravel-notification-channels/pushover"
+            ]            
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Natpnk\\Pushover\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
