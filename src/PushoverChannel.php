@@ -6,6 +6,7 @@ use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Notifications\Notification;
 use Illuminate\Notifications\Events\NotificationFailed;
+use NotificationChannels\Pushover\PushoverReceiver;
 use NotificationChannels\Pushover\Exceptions\{CouldNotSendNotification, ServiceCommunicationError};
 
 class PushoverChannel {
